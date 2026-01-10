@@ -111,8 +111,8 @@
     display: none;
    }
    .about-img{
-    max-width: 520px;
-    margin: 0 auto 20px;
+    max-width: 340px;
+    margin: 0 auto 24px;
    }
    .about-badge{
     font-size: 16px;
@@ -179,5 +179,8 @@
     .about-badge{
         font-size: 14px;
         padding: 6px 12px;
+    }
+    .about-img{
+        max-width: 280px;
     }
 }

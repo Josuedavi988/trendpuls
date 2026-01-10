@@ -110,6 +110,14 @@
    .for-dektop{
     display: none;
    }
+   .about-img{
+    max-width: 520px;
+    margin: 0 auto 20px;
+   }
+   .about-badge{
+    font-size: 16px;
+    padding: 8px 16px;
+   }
 }
 
 @media screen and (max-width: 600px){
@@ -168,4 +176,8 @@
     font-size: 14px;
     padding: 0 10px;
 }
+    .about-badge{
+        font-size: 14px;
+        padding: 6px 12px;
+    }
 }

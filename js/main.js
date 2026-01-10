@@ -95,7 +95,7 @@ if (heroVideo) {
       return;
     }
 
-    const maxScroll = Math.max(window.innerHeight * 0.7, 420);
+    const maxScroll = Math.max(window.innerHeight * 0.35, 280);
     const progress = Math.min(window.scrollY / maxScroll, 1);
     const targetWidth = minWidth + (maxWidth - minWidth) * progress;
     heroVideo.style.width = `${Math.round(targetWidth)}px`;

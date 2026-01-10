@@ -187,6 +187,7 @@ html{
 	width: 100%;
 	background: url(../images/hero.png) center center no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	min-height: 100vh;
 	height: auto;
 	padding-bottom: 140px;

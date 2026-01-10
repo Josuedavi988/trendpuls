@@ -1,0 +1,168 @@
+@media screen and (max-width: 1600px){
+    .hero-content{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 78px !important;
+    }
+    .funnel-img h2{
+        font-size: 40px;
+    }
+    .center-title h2{
+        font-size: 40px;
+    }
+    .section-title h2{
+        font-size: 40px;
+    }
+    .title-se h2{
+        font-size: 40px;
+    }
+    .workflow ul li{
+        font-size: 25px;
+    }
+    .about-content h2{
+        font-size: 40px;
+    }
+    .about-content ul li a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+    .hero-title {
+        font-size: 64px !important;
+    }
+    .hero-content p {
+    font-size: 22px;
+    margin: 30px 0;
+}
+.hero{
+    height: auto;
+}
+#slider-logo{
+    margin-top: 50px;
+}
+.hero{
+    padding-bottom: 50px;
+}
+.funnel-text h4 {
+    font-size: 26px;
+}
+.funnel-img h2 {
+        font-size: 34px;
+    }
+    .statistics-box{
+        padding: 20px 15px;
+    }
+    .about-content p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1200){
+    .navbar-nav li{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 990px){
+   .hero-content{
+    padding-top: 26%;
+    text-align: center;
+   }
+   .hero-title{
+    font-size: 54px !important;
+   }
+   .main2{
+    width: 90%;
+   }
+   .hero-text{
+    padding-right: 0;
+   }
+   .statistics-box{
+    height: auto;
+    margin-bottom: 40px;
+   }
+   .section-padding{
+    padding: 50px 0;
+   }
+   .center-title{
+    width: 95%;
+    margin-bottom: 50px;
+   }
+   .section-title{
+    width: 100%;
+    margin-bottom: 50px;
+   }
+   .service-box{
+    height: auto;
+    margin-bottom: 30px;
+   }
+   .workflow ul{
+    margin: 0;
+    padding: 0;
+   }
+   .video-wrapper{
+    margin-bottom: 10px;
+   }
+   .for-dektop{
+    display: none;
+   }
+}
+
+@media screen and (max-width: 600px){
+    #slider-logo{
+        padding: 30px 0;
+    }
+    .main{
+        width: 95%;
+    }
+    .hero-content {
+        padding-top: 47%;
+        text-align: center;
+    }
+    .gobal-btn a{
+        padding: 16px 18px;
+        border-radius: 16px;
+    }
+    .hero-title{
+        font-size: 38px !important;
+    }
+    .hero-content p{
+        font-size: 18px;
+    }
+    .funnel-text h4{
+        font-size: 20px;
+        text-align: center;
+    }
+    .funnel-text ul li{
+        font-size: 25px;
+    }
+    .funnel-text ul span{
+        font-size: 20px;
+        width: 35px;
+        line-height: 30px;
+        height: 30px;
+    }
+        .center-title h2 {
+        font-size: 30px;
+    }
+    .section-title h2 {
+        font-size: 32px;
+    }
+    .section-title p {
+    font-size: 19px;
+}
+.about-content ul{
+    flex-wrap: wrap;
+}
+.about-content ul li{
+    margin-bottom: 20px;
+}
+.video-box{
+	width:49%;
+}
+.footer p{
+    font-size: 14px;
+    padding: 0 10px;
+}
+}

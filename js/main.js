@@ -113,3 +113,46 @@ if (heroVideo) {
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', applyWidth);
 }
+
+const menuOverlay = document.getElementById('menuOverlay');
+const menuToggles = document.querySelectorAll('[data-menu-toggle]');
+if (menuOverlay && menuToggles.length) {
+  const setMenuOpen = (open) => {
+    document.body.classList.toggle('menu-open', open);
+    menuOverlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+    menuToggles.forEach((btn) => btn.setAttribute('aria-expanded', open ? 'true' : 'false'));
+  };
+
+  menuToggles.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const isOpen = document.body.classList.contains('menu-open');
+      setMenuOpen(!isOpen);
+    });
+  });
+
+  menuOverlay.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMenuOpen(false));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      setMenuOpen(false);
+    }
+  });
+}
+
+const mainHeader = document.getElementById('main2Nav');
+if (mainHeader) {
+  const hideThreshold = 320;
+  const setHeaderState = () => {
+    const scrollY = window.scrollY;
+    mainHeader.classList.toggle('header-scrolled', scrollY > 10);
+    if (scrollY === 0) {
+      mainHeader.classList.remove('header-hidden');
+    } else if (scrollY > hideThreshold) {
+      mainHeader.classList.add('header-hidden');
+    }
+  };
+  setHeaderState();
+  window.addEventListener('scroll', setHeaderState, { passive: true });
+}

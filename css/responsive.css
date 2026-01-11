@@ -75,6 +75,21 @@
    .hero-title{
     font-size: 54px !important;
    }
+   .topbar{
+    grid-template-columns: auto 1fr auto;
+    padding: 6px 14px;
+    margin: 0;
+   }
+   .topbar-brand{
+    font-size: 26px;
+   }
+   .topbar-phone{
+    font-size: 16px;
+   }
+   .menu-toggle img{
+    width: 44px;
+    height: 44px;
+   }
    .main2{
     width: 90%;
    }
@@ -111,7 +126,7 @@
     display: none;
    }
    .about-img{
-    max-width: 340px;
+    max-width: 300px;
     margin: 0 auto 24px;
    }
    .about-badge{
@@ -181,6 +196,6 @@
         padding: 6px 12px;
     }
     .about-img{
-        max-width: 280px;
+        max-width: 260px;
     }
 }

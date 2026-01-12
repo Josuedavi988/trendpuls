@@ -134,7 +134,7 @@
     padding: 8px 16px;
    }
    .brief-section.section-padding{
-    padding: clamp(64px, 12vw, 120px) 0;
+    padding: clamp(36px, 8vw, 72px) 0;
    }
    .brief-text{
     max-width: 90%;
@@ -226,7 +226,7 @@
         max-width: 260px;
     }
     .brief-section.section-padding{
-        padding: 56px 0 72px;
+        padding: 40px 0;
     }
     .brief-text{
         max-width: 92%;

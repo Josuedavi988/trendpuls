@@ -535,12 +535,12 @@ body.menu-open{
 }
 
 .slide-image img {
-	height: 70px;
+	height: 100px;
 	width: auto;
 	display: block;
 }
 .brief-section.section-padding{
-	padding: clamp(80px, 12vw, 160px) 0;
+	padding: clamp(40px, 6vw, 80px) 0;
 }
 .brief-section{
 	color: #000;
@@ -645,7 +645,7 @@ body.menu-open{
   -webkit-text-fill-color: transparent;
 }
 .funnel.section-padding{
-	padding-top: 4px;
+	padding-top: 32px;
 }
 .funnel-img img {
 	width: 80%;

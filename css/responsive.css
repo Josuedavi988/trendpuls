@@ -111,6 +111,26 @@
     width: 100%;
     margin-bottom: 50px;
    }
+   .service .main2{
+    width: 92%;
+   }
+   .services-story{
+    max-width: 90%;
+   }
+   .services-photos{
+    flex-direction: column;
+    align-items: center;
+   }
+   .services-photos img{
+    width: min(560px, 90%);
+   }
+   .services-story h2{
+    font-size: 40px;
+   }
+   .services-copy{
+    font-size: 18px;
+    line-height: 1.5;
+   }
    .service-box{
     height: auto;
     margin-bottom: 30px;
@@ -121,6 +141,15 @@
    }
    .video-wrapper{
     margin-bottom: 10px;
+   }
+   .lead-video-teaser{
+    grid-template-columns: 1fr;
+   }
+   .lead-header p{
+    font-size: 19px;
+   }
+   .lead-list li{
+    font-size: 18px;
    }
    .for-dektop{
     display: none;
@@ -183,6 +212,19 @@
     .hero-content p{
         font-size: 18px;
     }
+    .lead-header h2{
+        font-size: 30px;
+    }
+    .lead-header p{
+        font-size: 17px;
+    }
+    .lead-form,
+    .lead-unlocked{
+        padding: 20px;
+    }
+    .lead-submit{
+        font-size: 16px;
+    }
     .funnel-text h4{
         font-size: 20px;
         text-align: center;
@@ -205,6 +247,13 @@
     .section-title p {
     font-size: 19px;
 }
+    .services-story h2{
+        font-size: 32px;
+    }
+    .services-copy{
+        font-size: 17px;
+        gap: 8px;
+    }
 .about-content ul{
     flex-wrap: wrap;
 }

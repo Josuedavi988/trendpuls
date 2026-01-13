@@ -156,3 +156,41 @@ if (mainHeader) {
   setHeaderState();
   window.addEventListener('scroll', setHeaderState, { passive: true });
 }
+
+const leadForm = document.getElementById('leadForm');
+const leadTeaser = document.getElementById('leadTeaser');
+const leadUnlocked = document.getElementById('leadUnlocked');
+const leadModal = document.getElementById('leadModal');
+const leadOpeners = document.querySelectorAll('[data-lead-open]');
+const leadClosers = document.querySelectorAll('[data-lead-close]');
+
+const toggleLeadModal = (open) => {
+  if (!leadModal) return;
+  leadModal.classList.toggle('is-visible', open);
+  leadModal.setAttribute('aria-hidden', open ? 'false' : 'true');
+};
+
+if (leadModal) {
+  leadOpeners.forEach((btn) => btn.addEventListener('click', () => toggleLeadModal(true)));
+  leadClosers.forEach((btn) => btn.addEventListener('click', () => toggleLeadModal(false)));
+  leadModal.addEventListener('click', (event) => {
+    if (event.target === leadModal) {
+      toggleLeadModal(false);
+    }
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      toggleLeadModal(false);
+    }
+  });
+}
+
+if (leadForm && leadTeaser && leadUnlocked) {
+  leadForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    toggleLeadModal(false);
+    leadTeaser.hidden = true;
+    leadUnlocked.hidden = false;
+    leadUnlocked.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}

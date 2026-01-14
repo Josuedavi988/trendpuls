@@ -2,7 +2,8 @@
     .hero-content{
         width: 100%;
     }
-    .hero-title{
+    .hero-title,
+    .services-title{
         font-size: 92px !important;
     }
     .funnel-img h2{
@@ -29,7 +30,8 @@
 }
 
 @media screen and (max-width: 1350px){
-    .hero-title {
+    .hero-title,
+    .services-title{
         font-size: 76px !important;
     }
     .hero-content p {
@@ -59,7 +61,7 @@
     }
 }
 
-@media screen and (max-width: 1200){
+@media screen and (max-width: 1200px){
     .navbar-nav li{
         padding: 0 10px;
     }
@@ -72,7 +74,8 @@
    .hero{
     background-attachment: scroll;
    }
-   .hero-title{
+   .hero-title,
+   .services-title{
     font-size: 62px !important;
    }
    .topbar{
@@ -129,7 +132,7 @@
    }
    .services-copy{
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.4;
    }
    .service-box{
     height: auto;
@@ -206,7 +209,8 @@
         padding: 16px 18px;
         border-radius: 16px;
     }
-    .hero-title{
+    .hero-title,
+    .services-title{
         font-size: 44px !important;
     }
     .hero-content p{

@@ -222,6 +222,10 @@
     .lead-header p{
         font-size: 17px;
     }
+    .lead-email input{
+        font-size: 16px;
+        padding: 14px 18px;
+    }
     .lead-form,
     .lead-unlocked{
         padding: 20px;

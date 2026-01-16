@@ -79,6 +79,7 @@
     font-size: 62px !important;
    }
    .topbar{
+    width: 100%;
     grid-template-columns: auto 1fr auto;
     padding: 6px 14px;
     margin: 0;
@@ -164,6 +165,21 @@
    .about-badge{
     font-size: 16px;
     padding: 8px 16px;
+    white-space: normal;
+    max-width: 100%;
+    text-align: center;
+   }
+   .about-badge--top,
+   .about-badge--bottom{
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+   }
+   .about-badge--top{
+    top: 12px;
+   }
+   .about-badge--bottom{
+    bottom: 12px;
    }
    .brief-section.section-padding{
     padding: clamp(36px, 8vw, 72px) 0;

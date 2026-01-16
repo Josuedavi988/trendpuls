@@ -4,7 +4,6 @@
     font-weight: 900;
     font-display: swap;
 }
-/* TEST 123 */
 
 @font-face {
     font-family: 'NeueMontreal-Medium';
@@ -150,6 +149,8 @@ li {
 
 html{
 	scroll-behavior: smooth;
+	width: 100%;
+	overflow-x: hidden;
 }
 .waitlist {
 	height: auto;
@@ -194,6 +195,10 @@ html{
 	width: 80%;
 	margin: 0 auto;
 }
+#main2Nav .main2,
+.menu-overlay .main2{
+	width: 100%;
+}
 #main2Nav{
 	width: 100%;
 	z-index: 999;
@@ -213,11 +218,9 @@ html{
 	grid-template-columns: 1fr auto 1fr;
 	align-items: center;
 	gap: 20px;
-	width: 100vw;
+	width: 100%;
 	backdrop-filter: blur(10.199999809265137px);
 	margin: 0;
-	margin-left: calc(50% - 50vw);
-	margin-right: calc(50% - 50vw);
 	border-radius: 0;
 	padding: 6px 32px;
 	border: none;
@@ -414,6 +417,16 @@ body.menu-open{
 	font-weight: 900;
 	line-height: 1.05;
 	letter-spacing: -0.02em;
+}
+.hero-title,
+.services-title,
+.lead-header h2,
+.section-title h2,
+.center-title h2,
+.title-se h2{
+	overflow-wrap: anywhere;
+	word-break: break-word;
+	hyphens: auto;
 }
 .hero-content h1 span{
 	color: inherit;
@@ -1205,6 +1218,9 @@ body.menu-open{
 
 /* Hide default cursor */
 body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #0b0f1f;
   cursor: none;
 }
 

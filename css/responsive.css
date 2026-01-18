@@ -68,7 +68,7 @@
 }
 @media screen and (max-width: 990px){
    .hero-content{
-    padding-top: 26%;
+    padding-top: 14%;
     text-align: center;
    }
    .hero{
@@ -212,14 +212,53 @@
 
 @media screen and (max-width: 600px){
     #slider-logo{
-        padding: 8px 0;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .main{
         width: 95%;
     }
     .hero-content {
-        padding-top: 47%;
+        padding-top: 96px;
         text-align: center;
+    }
+    .hero{
+        padding-bottom: 20px;
+    }
+    .topbar{
+        position: relative;
+        padding: 6px 10px;
+        gap: 10px;
+    }
+    .topbar-brand{
+        font-size: 22px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+    .topbar-phone{
+        font-size: 13px;
+        white-space: nowrap;
+        gap: 6px;
+        grid-column: 1;
+    }
+    .topbar-phone img{
+        width: 16px;
+        height: 16px;
+    }
+    .menu-toggle{
+        font-size: 16px;
+        gap: 6px;
+        grid-column: 3;
+    }
+    .menu-label{
+        display: none;
+    }
+    .menu-toggle img{
+        width: 36px;
+        height: 36px;
     }
     .gobal-btn a{
         padding: 16px 18px;
@@ -239,8 +278,10 @@
         font-size: 17px;
     }
     .lead-email input{
-        font-size: 16px;
-        padding: 14px 18px;
+        font-size: 13px;
+        padding: 12px 12px;
+        line-height: 1.2;
+        text-overflow: ellipsis;
     }
     .lead-form,
     .lead-unlocked{
@@ -315,5 +356,17 @@
         font-size: 19px;
         line-height: 1.8;
         margin-bottom: 14px;
+    }
+    .slider-logo-all{
+        gap: 0;
+    }
+    .slide-row + .slide-row{
+        margin-top: 0;
+    }
+    .slide-image{
+        margin: 0 12px;
+    }
+    .slide-image img{
+        height: 120px;
     }
 }

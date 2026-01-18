@@ -409,6 +409,7 @@ body.menu-open{
 .hero-text{
 	padding-right: 0;
 	max-width: 900px;
+	text-align: center;
 }
 .hero-title,
 .services-title{

@@ -860,6 +860,11 @@ body.menu-open{
 	font-size: clamp(32px, 4vw, 54px);
 	font-family: 'NeueMontreal-Bold';
 }
+.services-title{
+	font-weight: 900;
+	font-size: clamp(38px, 4.8vw, 64px);
+	text-shadow: 0 0 1.6px currentColor;
+}
 .lead-highlight{
 	color: inherit;
 	font-weight: inherit;

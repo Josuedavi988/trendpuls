@@ -78,9 +78,9 @@
 							<h1 class="hero-title">MEHR BUDGET MACHT SCHLECHTE ADS NICHT BESSER.</h1>
 							<p>Ich produziere Video Ads und teste sie systematisch mit der Signal Ads Methode statt auf Glück zu hoffen.</p>
 							<div class="gobal-btn hero-cta">
-								<a href="#lead" class="cta-button">
-									<span class="cta-title">GRATIS 30-MIN ANALYSE CALL</span>
-									<span class="cta-subtitle">Ehrlicher Blick auf dein Marketing</span>
+								<a href="signal-strategy.html" class="cta-button" data-lead-open aria-controls="leadModal">
+									<span class="cta-title">GRATIS SIGNAL STRATEGY VIDEO</span>
+									<span class="cta-subtitle">Echte Klarheit vor Budget</span>
 								</a>
 							</div>
 						</div>
@@ -348,7 +348,7 @@
 					<div class="lead-video">
 						<video controls poster="images/hero-video.jpg" src="images/hero-video.mp4"></video>
 					</div>
-					<a class="lead-cta" href="mailto:josue@gmx.ch">Gratis Strategiegespräch</a>
+					<a class="lead-cta" href="signal-strategy.html">Gratis Strategiegespräch</a>
 				</div>
 			</div>
 		</section>
@@ -356,16 +356,41 @@
 		<div class="lead-modal" id="leadModal" aria-hidden="true">
 			<div class="lead-modal-content">
 				<button class="lead-modal-close" type="button" data-lead-close aria-label="Schliessen">×</button>
-				<h3>Video freischalten</h3>
-				<p>Trag deine Daten ein, damit ich dir das Video freischalten kann.</p>
+				<h3>Hol dir das Signal Strategy Video</h3>
+				<p>Trag deine Daten ein und du bekommst sofort Zugriff.</p>
 				<form class="lead-form" id="leadForm">
-					<label for="leadName">Name</label>
-					<input id="leadName" name="name" type="text" placeholder="Dein Name" required>
-					<label for="leadEmail">E-Mail</label>
-					<input id="leadEmail" name="email" type="email" placeholder="name@email.com" required>
-					<label for="leadPhone">Telefon (optional)</label>
-					<input id="leadPhone" name="phone" type="tel" placeholder="+41 76 000 00 00">
-					<button class="lead-submit" type="submit">Gratis Video freischalten</button>
+					<div class="lead-form-grid">
+						<div class="lead-field">
+							<label for="leadFirstName">Vorname</label>
+							<input id="leadFirstName" name="firstName" type="text" autocomplete="given-name" required>
+						</div>
+						<div class="lead-field">
+							<label for="leadLastName">Nachname</label>
+							<input id="leadLastName" name="lastName" type="text" autocomplete="family-name" required>
+						</div>
+						<div class="lead-field">
+							<label for="leadEmail">E Mail</label>
+							<input id="leadEmail" name="email" type="email" autocomplete="email" required>
+						</div>
+						<div class="lead-field">
+							<label for="leadPhone">Telefonnummer</label>
+							<div class="lead-phone-control">
+								<select id="leadCountryCode" name="countryCode" class="lead-country" aria-label="Landesvorwahl">
+									<option value="+41" selected>CH +41</option>
+									<option value="+49">DE +49</option>
+									<option value="+43">AT +43</option>
+									<option value="+33">FR +33</option>
+									<option value="+39">IT +39</option>
+									<option value="+44">UK +44</option>
+									<option value="+1">US +1</option>
+								</select>
+								<input id="leadPhone" name="phone" type="tel" inputmode="tel"
+									pattern="^\\+?[0-9\\s()\\-]+$" placeholder="076 675 04 28" autocomplete="tel" required>
+							</div>
+						</div>
+					</div>
+					<button class="lead-submit" type="submit">Zugriff erhalten</button>
+					<p class="lead-trust">Kein Spam. Nur das Video plus 1 Follow up mit praktischen Beispielen.</p>
 				</form>
 			</div>
 		</div>

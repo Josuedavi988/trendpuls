@@ -141,7 +141,12 @@ const toggleLeadModal = (open) => {
 };
 
 if (leadModal) {
-  leadOpeners.forEach((btn) => btn.addEventListener('click', () => toggleLeadModal(true)));
+  leadOpeners.forEach((btn) => btn.addEventListener('click', (event) => {
+    if (btn.tagName === 'A') {
+      event.preventDefault();
+    }
+    toggleLeadModal(true);
+  }));
   leadClosers.forEach((btn) => btn.addEventListener('click', () => toggleLeadModal(false)));
   leadModal.addEventListener('click', (event) => {
     if (event.target === leadModal) {
@@ -155,12 +160,52 @@ if (leadModal) {
   });
 }
 
-if (leadForm && leadTeaser && leadUnlocked) {
+if (leadForm) {
   leadForm.addEventListener('submit', (event) => {
     event.preventDefault();
+    if (!leadForm.checkValidity()) {
+      leadForm.reportValidity();
+      return;
+    }
+    const formData = new FormData(leadForm);
+    const firstName = (formData.get('firstName') || '').toString().trim();
+    const lastName = (formData.get('lastName') || '').toString().trim();
+    const email = (formData.get('email') || '').toString().trim();
+    const rawPhone = (formData.get('phone') || '').toString().trim();
+    const countryCode = (formData.get('countryCode') || '+41').toString().trim();
+    const normalizePhone = (value) => {
+      const trimmed = value.trim();
+      if (!trimmed) {
+        return '';
+      }
+      const digits = trimmed.replace(/\D/g, '');
+      if (!digits) {
+        return '';
+      }
+      if (trimmed.startsWith('+')) {
+        return `+${digits}`;
+      }
+      if (digits.startsWith('00')) {
+        return `+${digits.slice(2)}`;
+      }
+      const normalizedCode = countryCode.startsWith('+') ? countryCode : `+${countryCode}`;
+      const codeDigits = normalizedCode.replace(/\D/g, '');
+      if (digits.startsWith('0')) {
+        return `+${codeDigits}${digits.slice(1)}`;
+      }
+      if (digits.startsWith(codeDigits)) {
+        return `+${digits}`;
+      }
+      return `+${codeDigits}${digits}`;
+    };
+    const phone = normalizePhone(rawPhone);
+
+    sessionStorage.setItem('firstName', firstName);
+    sessionStorage.setItem('lastName', lastName);
+    sessionStorage.setItem('email', email);
+    sessionStorage.setItem('phone', phone);
+
     toggleLeadModal(false);
-    leadTeaser.hidden = true;
-    leadUnlocked.hidden = false;
-    leadUnlocked.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    window.location.href = 'signal-strategy.html';
   });
 }

@@ -990,9 +990,12 @@ body.menu-open{
 	cursor: pointer;
 }
 .lead-form label{
-	display: block;
+	display: flex;
+	align-items: flex-end;
 	font-size: 16px;
+	line-height: 1.2;
 	margin-bottom: 6px;
+	min-height: 38px;
 }
 .lead-form input{
 	width: 100%;
@@ -1001,10 +1004,43 @@ body.menu-open{
 	background: rgba(255, 255, 255, 0.12);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	color: #fff;
-	margin-bottom: 16px;
+	margin-bottom: 0;
 }
 .lead-form input::placeholder{
 	color: rgba(255, 255, 255, 0.6);
+}
+.lead-form-grid{
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+	margin-bottom: 16px;
+}
+.lead-field{
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+.lead-phone-control{
+	display: flex;
+	gap: 10px;
+}
+.lead-country{
+	flex: 0 0 120px;
+	padding: 12px 10px;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.12);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	color: #fff;
+	font-family: 'NeueMontreal-Medium';
+}
+.lead-phone-control input{
+	flex: 1;
+}
+.lead-trust{
+	margin: 12px 0 0;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.7);
+	text-align: center;
 }
 .lead-submit{
 	width: 100%;

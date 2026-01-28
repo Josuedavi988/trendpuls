@@ -1025,13 +1025,14 @@ body.menu-open{
 	gap: 10px;
 }
 .lead-country{
-	flex: 0 0 120px;
-	padding: 12px 10px;
+	flex: 0 0 96px;
+	padding: 10px 8px;
 	border-radius: 12px;
 	background: rgba(255, 255, 255, 0.12);
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	color: #fff;
 	font-family: 'NeueMontreal-Medium';
+	font-size: 14px;
 }
 .lead-phone-control input{
 	flex: 1;

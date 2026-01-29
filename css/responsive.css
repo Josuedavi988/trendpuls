@@ -241,6 +241,9 @@
         gap: 6px;
         grid-column: 1;
     }
+    .topbar-phone-text{
+        display: none;
+    }
     .topbar-phone img{
         width: 16px;
         height: 16px;

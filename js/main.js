@@ -169,7 +169,6 @@ if (leadForm) {
     }
     const formData = new FormData(leadForm);
     const firstName = (formData.get('firstName') || '').toString().trim();
-    const lastName = (formData.get('lastName') || '').toString().trim();
     const email = (formData.get('email') || '').toString().trim();
     const rawPhone = (formData.get('phone') || '').toString().trim();
     const countryCode = (formData.get('countryCode') || '+41').toString().trim();
@@ -201,7 +200,6 @@ if (leadForm) {
     const phone = normalizePhone(rawPhone);
 
     sessionStorage.setItem('firstName', firstName);
-    sessionStorage.setItem('lastName', lastName);
     sessionStorage.setItem('email', email);
     sessionStorage.setItem('phone', phone);
 

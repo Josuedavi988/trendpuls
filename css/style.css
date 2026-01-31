@@ -649,10 +649,166 @@ body.menu-open{
 	font-family: 'NeueMontreal-Regular';
 	font-weight: 400;
 }
+.brief-section-wrap{
+	max-width: 720px;
+	margin: 0 auto;
+	color: #000;
+}
+.brief-stack{
+	display: flex;
+	flex-direction: column;
+}
+.brief-headline{
+	font-size: clamp(24px, 2.2vw, 32px);
+	line-height: 1.35;
+	font-family: 'NeueMontreal-Bold';
+	font-weight: 800;
+	color: #000;
+	margin: 0;
+}
+.brief-space-sm{
+	margin-top: 16px;
+}
+.brief-space-md{
+	margin-top: 20px;
+}
+.brief-space-lg{
+	margin-top: 26px;
+}
+.brief-card{
+	border-radius: 18px;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	background: rgba(0, 0, 0, 0.04);
+	backdrop-filter: blur(6px);
+	padding: 24px;
+}
+.brief-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-size: 18px;
+	line-height: 1.65;
+	color: #000;
+}
+.brief-list li{
+	position: relative;
+	padding-left: 18px;
+	color: #000;
+}
+.brief-list li::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.6em;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--accent-pink);
+}
+.brief-card-quote{
+	border-left: 3px solid var(--accent-pink);
+}
+.brief-quote-text{
+	margin: 0;
+	font-size: 19px;
+	line-height: 1.65;
+	font-family: 'NeueMontreal-Bold';
+	font-weight: 700;
+	color: #000;
+}
+.brief-body-text{
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #000;
+}
+.brief-questions{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font-size: 18px;
+	line-height: 1.7;
+	color: #000;
+}
+.brief-questions li{
+	position: relative;
+	padding-left: 18px;
+	color: #000;
+}
+.brief-questions li::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.6em;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: var(--accent-pink);
+}
+.brief-card-highlight{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.brief-eyebrow{
+	display: inline-block;
+	font-size: 12px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	font-family: 'NeueMontreal-Bold';
+	font-weight: 700;
+	color: var(--accent-pink);
+}
+.brief-card-highlight p{
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.7;
+	font-weight: 600;
+	color: #000;
+}
+.brief-body .brief-list{
+	margin: 0 0 16px;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	font-size: clamp(20px, 1.6vw, 26px);
+	line-height: 1.7;
+	color: #000 !important;
+	font-family: 'NeueMontreal-Regular';
+	font-weight: 400;
+}
+.brief-body .brief-list li{
+	position: relative;
+	padding-left: 18px;
+	color: #000 !important;
+}
+.brief-body .brief-list li::before{
+	content: "•";
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: var(--accent-pink);
+}
 .brief-body p.brief-emphasis{
 	font-weight: 900;
 	letter-spacing: 0.02em;
 	font-family: 'NeueMontreal-Bold';
+	color: #000 !important;
+}
+.brief-underline{
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 4px;
+	font-weight: 900;
+	color: #000 !important;
 }
 .brief-body .brief-highlight{
 	padding: 0 4px;
@@ -1011,7 +1167,7 @@ body.menu-open{
 }
 .lead-form-grid{
 	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
+	grid-template-columns: 1fr;
 	gap: 16px;
 	margin-bottom: 16px;
 }
@@ -1022,20 +1178,43 @@ body.menu-open{
 }
 .lead-phone-control{
 	display: flex;
-	gap: 10px;
-}
-.lead-country{
-	flex: 0 0 96px;
-	padding: 10px 8px;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 14px;
 	border-radius: 12px;
 	background: rgba(255, 255, 255, 0.12);
 	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.lead-country{
+	flex: 0 0 110px;
+	padding: 8px 10px;
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.08);
 	color: #fff;
-	font-family: 'NeueMontreal-Medium';
+	font-family: 'NeueMontreal-Bold';
 	font-size: 14px;
+}
+.lead-country option{
+	color: #111;
+}
+.lead-flag{
+	flex: 0 0 34px;
+	height: 34px;
+	border-radius: 8px;
+	background: #d11f28;
+	color: #fff;
+	display: grid;
+	place-items: center;
+	font-weight: 900;
+	font-size: 18px;
 }
 .lead-phone-control input{
 	flex: 1;
+	padding: 0;
+	border: none;
+	background: transparent;
+	margin: 0;
 }
 .lead-trust{
 	margin: 12px 0 0;
@@ -1052,8 +1231,8 @@ body.menu-open{
 	color: #fff;
 	font-family: 'NeueMontreal-Bold';
 	font-size: 18px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
+	letter-spacing: 0;
+	text-transform: none;
 	cursor: pointer;
 }
 .lead-unlocked[hidden]{

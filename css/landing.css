@@ -171,6 +171,24 @@ video.lp-video-embed{
 	width: min(980px, 100%);
 	padding: 14px;
 }
+.lp-calendly{
+	margin-top: 36px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	align-items: center;
+}
+.lp-calendly .lp-section-title{
+	margin-bottom: 0;
+}
+.lp-calendly-copy{
+	max-width: 720px;
+	text-align: center;
+	font-size: 18px;
+	line-height: 1.6;
+	color: var(--muted);
+	margin: 0;
+}
 
 .lp-bullets ul {
 	margin: 0;

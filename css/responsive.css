@@ -287,11 +287,11 @@
         grid-template-columns: 1fr;
     }
     .lead-phone-control{
-        flex-direction: column;
+        flex-direction: row;
     }
     .lead-country{
-        flex: 0 0 auto;
-        width: 100%;
+        flex: 0 0 96px;
+        font-size: 13px;
     }
     .lead-form,
     .lead-unlocked{

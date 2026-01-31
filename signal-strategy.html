@@ -36,6 +36,20 @@
 					<div class="lp-card lp-video-hero">
 						<video class="lp-video-embed" controls preload="metadata" src="images/Herovideo2.mp4"></video>
 					</div>
+					<div class="lp-calendly">
+						<h2 class="lp-section-title">Kostenloses 30-Minuten Analyse Gespräch</h2>
+						<p class="lp-calendly-copy">Wenn du wissen willst, ob und wie die Signal Strategy für dein Business Sinn macht,<br>
+							lass uns dein Setup gemeinsam anschauen.</p>
+						<!-- Calendly inline widget begin -->
+						<div class="calendly-inline-widget"
+							 data-url="https://calendly.com/josue-ygax/30min?hide_event_type_details=1&hide_gdpr_banner=1"
+							 style="min-width:320px;height:700px;">
+						</div>
+						<script type="text/javascript"
+								src="https://assets.calendly.com/assets/external/widget.js"
+								async></script>
+						<!-- Calendly inline widget end -->
+					</div>
 				</div>
 			</div>
 		</section>
@@ -103,7 +117,7 @@
 
 	<script>
 		(() => {
-			const requiredKeys = ['firstName', 'lastName', 'email', 'phone'];
+			const requiredKeys = ['firstName', 'email', 'phone'];
 			const hasData = (storage) => requiredKeys.every((key) => storage.getItem(key));
 			const hasAccess = hasData(sessionStorage) || hasData(localStorage);
 			const modal = document.getElementById('accessModal');

@@ -710,8 +710,8 @@ body.menu-open{
 	display: inline-flex;
 }
 .brief-letter-strong{
-	font-family: 'NeueMontreal-Regular';
-	font-weight: 600;
+	font-family: 'NeueMontreal-Bold';
+	font-weight: 700;
 	margin: 0;
 	font-size: clamp(19px, 1.5vw, 23px);
 	line-height: 1.75;
